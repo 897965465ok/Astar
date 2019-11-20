@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A*寻路算法</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url('./image/1.jpg') no-repeat center center;
+        }
+
+        .container {
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            border: gray solid 1px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background: white;
+        }
+
+        .container .element {
+            height: 20px;
+            border: #66CCFF solid 0.5px;
+            flex: 0 0 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button-wrpper {
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+    </section>
+    <footer class="button-wrpper">
+        <button class="start ">点击开始寻路</button>
+        <button class="cat">设置猫的位置</button>
+        <button class="fish">设置鱼的位置</button>
+        <button class="wall">设置墙壁的位置</button>
+    </footer>
+</body>
+
+</html>
